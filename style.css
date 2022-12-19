@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.left-side {
+    position: absolute;
+    width: 35%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    transition: transform .5s linear;
+}
+
+.left-side > div {
+    width: 100%;
+    height: 100%;
+    color: rgb(235, 235, 235);
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-side h2 {
+    font-size: 2rem;
+    margin: -2rem 0.5rem 0.625rem 0.5rem;
+}
+
+.slide-color-1 {
+   background: #E08D13; 
+}
+
+.slide-color-2 {
+    background: #539080; 
+}
+
+.slide-color-3 {
+    background: #935327; 
+}
+
+.slide-color-4 {
+    background: #011552; 
+}
+
+.slide-color-5 {
+    background: #63524B; 
+}
+
+.slide-color-6 {
+    background: #325014; 
+}
+
+.right-side {
+    position: absolute;
+    width: 65%;
+    height: 100%;
+    top: 0;
+    left: 35%;
+
+    transition: transform .5s linear;
+}
+
+.right-side > div {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.image1 {
+    background-image: url(images/img-intro1.jpg);
+}
+
+.image2 {
+    background-image: url(images/img-intro2.jpg);
+}
+
+.image3 {
+    background-image: url(images/img-intro3.jpg);
+}
+
+.image4 {
+    background-image: url(images/img-intro4.jpg);
+}
+
+.image5 {
+    background-image: url(images/img-intro5.jpg);
+}
+
+.image6 {
+    background-image: url(images/img-intro6.jpg);
+}
+
+.arrow-buttons .arrow{
+    position: absolute;
+    z-index: 100;
+    left: 35%;
+    top: 50%;
+    opacity: 0.8;
+}
+
+.arrow img {
+    width: 2rem;
+}
+
+.arrow-down img {
+    transform: translateX(-100%);
+    border-top-left-radius: 0.3rem;
+    border-bottom-left-radius: 0.3rem;
+}
+
+.arrow-down img:hover {
+    border: 0.1rem solid rgb(29, 29, 29);
+    cursor: pointer;
+}
+
+.arrow-up img {
+    transform: translateY(-100%);
+    border-top-right-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
+}
+
+.arrow-up img:hover {
+    border: 0.1rem solid rgb(29, 29, 29);
+    cursor: pointer;
+}
+
+@media ( max-width: 700px) {
+    .left-side > div {
+        justify-content: center;
+        gap: 3rem;
+    }
+
+    .left-side h2 {
+        margin-top: -1.8rem;
+    }
+
+    .left-side p {
+        margin-top: 1.2rem;
+    }
+}
