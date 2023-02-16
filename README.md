@@ -1,3 +1,3 @@
 ﻿# Introductory-banner
  
- V tomto projekte sa pomocou JavaScriptu posúvajú obrázky hore a text dole pri kliknuti na šípky.
+ Pri kliknutí na šípku sa odpáli addEventListener, ktorý spustí funkciu podľa toho na aký element s classou sa kliklo. Vo funkcií si odchytávam natívnu vlastnosť clientHeight elementu s classou container, ktorá ma 100vh.V podmienke overujem, na ktorú šípku sa kliklo podľa argumentu direction, ktorý bol poslaný z funkcie. Premenná numberActiveSlide, ktorá ma defaultnu hodnotu 0 sa buď zvýši alebo zníži o 1. Ak je numberActiveSlide vyšší, ako počet obrázkov tak sa numberActiveSlide vráti na defaultnu hodnotu. Ak je numberActiveSlide menší, ako 0 tak sa vráti na posledný obrázok. V konstante righSide a leftSide mením style tým, že vypočítavam ako sa má transformovať element.
